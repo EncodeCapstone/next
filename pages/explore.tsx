@@ -67,7 +67,7 @@ export default function Explore() {
           <Nav />
         </div>
       </div>
-      <h2 className="flex justify-center mb-6 mt-36 text-4xl font-bold text-black">
+      <h2 className="flex justify-center mb-6 mt-24 mt- text-4xl font-bold text-black">
         Explore Campaigns
       </h2>
       <div className="flex justify-center mt-36">
