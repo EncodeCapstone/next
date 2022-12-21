@@ -41,20 +41,20 @@ export default function Explore() {
             <h2 className="flex justify-center mb-6 mt-24 mt- text-4xl font-bold text-black">
                 About Cherryt
             </h2>
-            <div className="flex justify-center mt-36">
+            <div className="flex justify-around mt-36">
                 <div className="aboutbox">
                     <AboutCard
                         name={"So what is Cherryt?"}
-                        description={"Cherryt is a web3 crowdfunding platform that uses the power of blockchain technology to enable the financing of projects, campaigns and everything else that needs funding. In return, the donators will benefit from governance and voting rights and receive an NFT as a prove of donation."}
+                        description={"Cherryt is a web3 crowdfunding platform that uses the power of blockchain technology to enable the financing of projects, campaigns and everything else that needs funding. In return, the donators will benefit from governance and voting rights and receive an NFT as a prove of donation. Cherryt gives full transparancy to all transactions and donations in order to always keep track of where funds come from and where they go."}
                         img={"/charity.jpeg"}
                         goal={"test"}
                     />
                 </div>
                 <div className="aboutbox">
                     <AboutCard
-                        name={"What does Cherryt offer that other Plarforms dont?"}
-                        description={"There are many donation, crowdfunding and investing platforms out there, but there is no platform that offers the flexibility to enable all varieties of funding in one platform, depending on the needs of the project. Cherryt gives project founders the possibility to set the parameters that determine whether, and if yes, how much donators and investors will benefit from a success of the project. Futhermore, Cherryt gives full transparancy to all transactions and donations in order to always keep track of where funds come from and where they go."}
-                        img={"test"}
+                        name={"How is Cherryt different?"}
+                        description={"There are many donation, crowdfunding and investing platforms out there, but there is no platform that offers the flexibility to enable all varieties of funding in one platform, depending on the needs of the project. Cherryt gives project founders the possibility to set the parameters that determine whether, and if yes, how much donators and investors will benefit from a success of the project."}
+                        img={"/charity_2.jpg"}
                         goal={"test"}
                     />
                 </div>

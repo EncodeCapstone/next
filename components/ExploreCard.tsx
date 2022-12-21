@@ -36,7 +36,7 @@ const ExploreCard: NextPage<Props> = ({ name, description, img, goal }) => {
 	  }
 
   return (
-    <div className="max-w-xl bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+    <div className="max-w-lg bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
       <a href="#">
         <img className="rounded-t-lg" src={img} alt="" />
       </a>

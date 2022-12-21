@@ -27,7 +27,7 @@ export default function Nav() {
           Dashboard
         </a>
 
-        <a href="#" className="font-semibold text-gray-900 hover:text-gray-900">
+        <a href="/about" className="font-semibold text-gray-900 hover:text-gray-900">
           About
         </a>
       </div>

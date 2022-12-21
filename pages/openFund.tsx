@@ -124,7 +124,7 @@ export default function OpenFund() {
       <h2 className="flex justify-center mb-6 mt-24 mt- text-4xl font-bold text-black">
         Create your own campaign
       </h2>
-      <div className="flex justify-around mt-36">
+      <div className="flex justify-center">
         <div className="flex pl-2">
           <div>
             <p className="flex justify-center mb-3 text-black font-semibold">
@@ -203,7 +203,7 @@ export default function OpenFund() {
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-violet-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-violet-500 dark:focus:border-violet-500"
             />
           </div>
-          <div className="mb-6 h-80 w-80">
+          <div className="mb-6">
             <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
               Campaign Description
             </label>
