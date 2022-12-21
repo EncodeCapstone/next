@@ -104,6 +104,13 @@ a {
   text-decoration: none;
 }
 
+.aboutbox {
+  position: static;
+  left: 60px;
+  bottom: 10px;
+  padding: 90px;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
