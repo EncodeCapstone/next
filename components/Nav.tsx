@@ -9,7 +9,7 @@ export default function Nav() {
         </a>
       </div>
       <div className="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-center lg:gap-x-12">
-        <a href="#" className="font-semibold text-gray-900 hover:text-gray-900">
+        <a href="/openFund" className="font-semibold text-gray-900 hover:text-gray-900">
           Open Fund
         </a>
 
@@ -27,7 +27,7 @@ export default function Nav() {
           Dashboard
         </a>
 
-        <a href="/about" className="font-semibold text-gray-900 hover:text-gray-900">
+        <a href="#" className="font-semibold text-gray-900 hover:text-gray-900">
           About
         </a>
       </div>

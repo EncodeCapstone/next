@@ -1,6 +1,38 @@
+import { ethers } from "ethers";
+import { useEffect, useState } from "react";
+import CampaignCard from "../components/CampaignCard";
+import ExploreCard from "../components/ExploreCard";
 import PageLayout from "../components/PageLayout";
+import ABI from "../constants/abi.json";
+
+let address: string = "0xa341093115148C5763a13F847C68dE43a4030175";
+
 
 export default function Dashboard() {
+	const [fund, setFund] = useState<any>([]);
+
+	async function getSigner() {
+		const provider = new ethers.providers.Web3Provider(
+		  (window as any).ethereum
+		);
+		const signer = provider.getSigner();
+		return signer;
+	  }
+
+	async function fetchData() {
+		const contract = new ethers.Contract(address, ABI, await getSigner());
+		try {
+			const fund = await contract.funds(3);
+			setFund(fund);
+		} catch (err) {
+			console.log('Error fetching data: ' + err);
+		}
+	}
+
+	useEffect(() => {
+		fetchData();
+	}, [])
+
   return (
     <PageLayout>
       <h2 className="flex justify-center mb-6 mt-24 text-4xl font-bold text-black">
@@ -17,7 +49,11 @@ export default function Dashboard() {
                 </h5>
               </a>
               <p className="flex justify-center mb-3 mt-8 font-normal text-gray-300 dark:text-gray-400">
-                Currently no opened campaigns
+				{fund[1] ?
+				<div>
+					<CampaignCard name={fund[1]} description={fund[6]} img={fund[7]} goal={fund[8]}/>
+				</div>
+				: "No campaigns yet"}
               </p>
             </div>
           </div>
