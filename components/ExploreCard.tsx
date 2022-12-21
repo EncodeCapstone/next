@@ -1,4 +1,9 @@
 import { NextPage } from "next";
+import { ethers } from "ethers";
+import { useRouter } from "next/router";
+import ABI from "../constants/abi.json";
+
+let address: string = "0xa341093115148C5763a13F847C68dE43a4030175";
 
 interface Props {
   name: string;
@@ -8,6 +13,28 @@ interface Props {
 }
 
 const ExploreCard: NextPage<Props> = ({ name, description, img, goal }) => {
+	const router = useRouter();
+
+	async function donate() {
+		const contract = new ethers.Contract(address, ABI, await getSigner());
+		try {
+			const tx = await contract.donateToFund(1, { value: ethers.utils.parseEther("0.01") });
+			await tx.wait();
+			router.reload();
+			console.log("Campaign created: " + tx.hash);
+		  } catch (error) {
+			console.log("Error while creating campaign: ", error);
+		  }
+	}
+
+	async function getSigner() {
+		const provider = new ethers.providers.Web3Provider(
+		  (window as any).ethereum
+		);
+		const signer = provider.getSigner();
+		return signer;
+	  }
+
   return (
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
       <a href="#">
@@ -44,6 +71,7 @@ const ExploreCard: NextPage<Props> = ({ name, description, img, goal }) => {
             ></path>
           </svg>
         </a>
+		<button onClick={() => donate()} type="button" className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2 ml-4 text-center mr-2 mb-2">Donate!</button>
       </div>
     </div>
   );
