@@ -5,11 +5,10 @@ export default function Hero() {
         <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
         <div>
           <h1 className="text-black text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
-            Share your aped gains
+            Want to help someone?
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
-            Instead of betting your hard aped money into another shitcoin, what
-            about giving to people or projects in need?
+            Instead of investing in more coins, what about donating to people or projects in need?
           </p>
           <div className="mt-8 flex gap-x-4 sm:justify-center">
             <a
@@ -18,7 +17,6 @@ export default function Hero() {
             >
               Create
               <span className="text-indigo-200" aria-hidden="true">
-                &rarr;
               </span>
             </a>
             <a
@@ -27,7 +25,6 @@ export default function Hero() {
             >
               Get involved
               <span className="text-gray-400" aria-hidden="true">
-                &rarr;
               </span>
             </a>
           </div>

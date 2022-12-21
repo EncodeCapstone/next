@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
-    <div className="mt-52">
+    <div className="mt-25">
       <footer className="p-4 bg-white sm:p-6 dark:bg-gray-900">
-        <div className="md:flex md:justify-between">
+        {/* <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="/" className="flex items-center">
               <span
@@ -103,7 +103,7 @@ export default function Footer() {
               </ul>
             </div>
           </div>
-        </div>
+        </div> */}
         <hr className="my-6 text-black sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-black sm:text-center dark:text-gray-400">

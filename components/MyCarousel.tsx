@@ -3,7 +3,7 @@ import CarouselCard from "./CarouselCard";
 
 export default function MyCarousel() {
   return (
-    <div className="mt-48">
+    <div className="mt-25">
       <h2 className="flex justify-center mb-6 text-4xl font-bold text-black">
         Top Campaigns
       </h2>

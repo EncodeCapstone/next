@@ -2,7 +2,7 @@ export default function UserFeedback() {
   return (
     <div className="mt-12">
       <h2 className="flex justify-center text-4xl font-bold text-black mb-10">
-        How was it like to raise via cherryt?
+        Whats it like using Cherryt?
       </h2>
       <div className="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2">
         <figure className="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700">
